@@ -1,7 +1,9 @@
 version: "3.9"
 services:
   liff-app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./liff:/usr/src/app
     ports:
